@@ -1,0 +1,7 @@
+module(
+    name = "openfirma_platforms",
+    version = "0.1.0",
+)
+
+bazel_dep(name = "llvm", version = "0.8.9")
+bazel_dep(name = "platforms", version = "1.1.0")
