@@ -26,7 +26,7 @@ prost_plugins = use_extension(
     "prost_plugins",
 )
 prost_plugins.release(
-    version = "0.2.0",
+    version = "0.2.1",
     sha256s = {
         "aarch64-apple-darwin": "...",
         "x86_64-pc-windows-msvc": "...",
