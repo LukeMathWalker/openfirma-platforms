@@ -9,3 +9,7 @@ application crate graph local to the application repository.
 During local development, OpenFirma uses a `local_path_override` pointing at this
 sibling checkout. CI should switch to a pinned archive or module release once the
 platform package is tagged.
+
+Tagged releases publish `openfirma-platforms-${VERSION}.tar.gz` and a matching
+`.sha256` file. Downstream repositories can consume that archive with a Bzlmod
+`archive_override` using `strip_prefix = "openfirma-platforms-${VERSION}"`.
